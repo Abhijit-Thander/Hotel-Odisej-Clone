@@ -6,6 +6,11 @@
     <link rel="shortcut icon" href="./Assets/favicon-32x32.png" />
     <title>Hotel Odisej - Mljet Island Hotel</title>
     <link rel="stylesheet" href="style.css" />
+    <!-- Locomotive css -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.css"
+    />
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -24,7 +29,9 @@
         </div>
       </nav>
       <header>
-        <img src="./Assets/Header.jpg" alt="" />
+        <div class="img-box">
+          <img src="./Assets/Header.jpg" alt="" id="logo" />
+        </div>
         <svg
           class="u-icon u-icon--logo js-navigation-logo"
           viewBox="0 0 312 91"
@@ -53,7 +60,39 @@
         </svg>
         <!-- <img src="./Assets/svgexport-4.png" alt="" id="logo" /> -->
       </header>
+      
+
+      <footer>
+        <div class="f-bg-svg">
+          <img src="./Assets/f-bg-svg.svg" alt="" />
+        </div>
+        <div class="f-content">
+          <div class="f-top">
+            <img src="./Assets/svgexport-4.png" alt="" />
+            <img src="./Assets/f-logo-negative-1-1-200x0.png" alt="" />
+          </div>
+          <div class="f-center">
+            <div class="f-center-top">
+              <h5>POMENA 16, 20226, POMENA, CROATIA</h5>
+              <h5>RESERVATIONS@ALH.HR</h5>
+              <h5>+385 20 300 300</h5>
+            </div>
+            <div class="f-center-bottom">
+              <h5>FACEBOOK</h5>
+              <h5>INSTAGRAM</h5>
+              <h5>PINTEREST</h5>
+            </div>
+          </div>
+          <div class="f-bottom">
+            <p>ALH GROUP MEDIA All Rights Reserved</p>
+            <p>Developement by <span> Avi</span></p>
+          </div>
+        </div>
+      </footer>
     </main>
+
+    <!--  Locomotive Scroll -->
+    <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.js"></script>
     <!-- Linked Gsap -->
     <script
       src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"

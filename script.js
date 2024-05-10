@@ -62,6 +62,40 @@ function pageAnimation() {
   });
 }
 
+function textAnimation() {
+  // let Allh1 = document.querySelectorAll("#page1 .h1-box h1").textContent;
+  // let splitedText = h1.split("");
+  // let clutter = "";
+  // splitedText.forEach(function (e) {
+  //   clutter += `<span>${e}</span>`;
+  // });
+  // document.querySelector("#page1 .h1-box h1").innerHTML = clutter;
+
+  let Allh1 = document.querySelectorAll("#page1 .h1-box h1");
+  Allh1.forEach(function (elem) {
+    let clutter = "";
+    let H1text = elem.textContent;
+    let splitedText = H1text.split("");
+    splitedText.forEach(function (e) {
+      clutter += `<span>${e}</span>`;
+    });
+    elem.innerHTML = clutter;
+  });
+
+  gsap.to("#page1 .h1-box h1 span", {
+    color: "#E3E3C4",
+    stagger: 0.1,
+    scrollTrigger: {
+      trigger: "#page1 h1",
+      scroller: "main",
+      // markers: true,
+      start: "top 60%",
+      end: "top -10%",
+      scrub: 2,
+    },
+  });
+}
 
 locomotiveScroll();
 pageAnimation();
+textAnimation();

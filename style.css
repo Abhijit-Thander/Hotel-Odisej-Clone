@@ -26,6 +26,7 @@ nav {
   position: fixed;
   top: 0;
   left: 0;
+  z-index: 199;
 }
 nav img {
   height: 24px;
@@ -54,7 +55,7 @@ nav .btn-grp button:nth-child(1) {
   outline: none;
 }
 nav .btn-grp button:nth-child(1):hover {
-  background-color: #bbe56da2;
+  background-color: #829e4fa2;
   border: none;
 }
 
@@ -64,10 +65,23 @@ header {
   height: 100vh;
   background-color: #434b34;
   z-index: 10;
+  position: relative;
 }
 
 header img {
   height: 100%;
   width: 100%;
   object-fit: cover;
+  object-position: center;
+}
+
+.u-icon {
+  width: fit-content;
+  height: 3vw;
+  fill: #434b34;
+  position: absolute;
+  top: 2.5vh;
+  left: 45%;
+  transform: translate(-50%, -50%);
+  cursor: pointer;
 }

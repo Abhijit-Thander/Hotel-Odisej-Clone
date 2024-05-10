@@ -95,7 +95,48 @@ function textAnimation() {
     },
   });
 }
+function Page2TextAnimation() {
+  let Allh1 = document.querySelectorAll("#page2 #page2-content .h1-heading h1");
+  Allh1.forEach(function (elem) {
+    let clutter = "";
+    let H1text = elem.textContent;
+    let splitedText = H1text.split("");
+    splitedText.forEach(function (e) {
+      clutter += `<span>${e}</span>`;
+    });
+    elem.innerHTML = clutter;
+  });
+  gsap.to("#page2 #page2-content .h1-heading h1 span", {
+    color: "#434B34",
+    stagger: 0.1,
+    scrollTrigger: {
+      trigger: "#page2 #page2-content .h1-heading h1",
+      scroller: "main",
+      // markers: true,
+      start: "top 90%",
+      end: "top 20%",
+      scrub: 0.1,
+    },
+  });
+}
+
+function page2ImgAnimation() {
+  gsap.from("#page2 .img-content p, h3, img", {
+    opacity: 0,
+    stagger: 0.1,
+    scrollTrigger: {
+      trigger: "#page2 .img-content img ",
+      scroller: "main",
+      markers: true,
+      start: "top 85%",
+      end: "top 30%",
+      scrub: 3,
+    },
+  });
+}
 
 locomotiveScroll();
 pageAnimation();
 textAnimation();
+Page2TextAnimation();
+page2ImgAnimation();

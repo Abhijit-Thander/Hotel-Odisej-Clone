@@ -182,10 +182,75 @@ function page5textAnimation() {
     scrollTrigger: {
       trigger: "#page5 .box",
       scroller: "main",
-      markers: true,
+      // markers: true,
       start: "top 80%",
       end: "top 20%",
       scrub: 3,
+    },
+  });
+  gsap.from("#page5 .header .h-btm ", {
+    opacity: 0,
+    stagger: 0.1,
+    scrollTrigger: {
+      trigger: "#page5 .header .h-btm ",
+      scroller: "main",
+      // markers: true,
+      start: "top 80%",
+      end: "top 50%",
+      scrub: 1,
+    },
+  });
+}
+
+function page6textAnimation() {
+  let Allh1 = document.querySelectorAll("#page6 h1");
+  Allh1.forEach(function (elem) {
+    let clutter = "";
+    let H1text = elem.textContent;
+    let splitedText = H1text.split("");
+    splitedText.forEach(function (e) {
+      clutter += `<span>${e}</span>`;
+    });
+    elem.innerHTML = clutter;
+  });
+
+  gsap.to("#page6  h1 span", {
+    color: "#434B34",
+    stagger: 0.1,
+    scrollTrigger: {
+      trigger: "#page6 h1",
+      scroller: "main",
+      // markers: true,
+      start: "top 75%",
+      end: "top 0%",
+      scrub: 2,
+    },
+  });
+}
+function page10Animation() {
+  gsap.from("#page10 .header h1,h6   ", {
+    opacity: 0,
+    stagger: 1,
+    scrollTrigger: {
+      trigger: "#page10 .header ",
+      scroller: "main",
+      // markers: true,
+      start: "top 90%",
+      end: "top 70%",
+      scrub: 3,
+    },
+  });
+
+  gsap.from("#page10 .content .left", {
+    opacity: 0,
+    stagger: 0.1,
+    scrollTrigger: {
+      trigger: "#page10 .content ",
+      scroller: "main",
+      // markers: true,
+      start: "top 90%",
+      end: "top 30%",
+      scrub: 1,
     },
   });
 }
@@ -197,3 +262,5 @@ Page2TextAnimation();
 page2ImgAnimation();
 page4Anim();
 page5textAnimation();
+page6textAnimation();
+page10Animation();

@@ -121,15 +121,15 @@ function Page2TextAnimation() {
 }
 
 function page2ImgAnimation() {
-  gsap.from("#page2 .img-content p, h3, img", {
+  gsap.from("#page2 .img-content p, h3, .anime", {
     opacity: 0,
     stagger: 0.1,
     scrollTrigger: {
-      trigger: "#page2 .img-content img ",
+      trigger: "#page2 .img-content  ",
       scroller: "main",
-      markers: true,
+      // markers: true,
       start: "top 85%",
-      end: "top 30%",
+      end: "top 40%",
       scrub: 3,
     },
   });

@@ -135,8 +135,25 @@ function page2ImgAnimation() {
   });
 }
 
+function page4Anim() {
+  gsap.from("#page4-content", {
+    scale: 0,
+    duration: 4,
+    scrollTrigger: {
+      trigger: "#page4-content",
+      scroller: "main",
+      // markers: true,
+      start: "top 120%",
+      end: "top 70%",
+      scrub: 1,
+      // ease: "power3.inOut",
+    },
+  });
+}
+
 locomotiveScroll();
 pageAnimation();
 textAnimation();
 Page2TextAnimation();
 page2ImgAnimation();
+page4Anim();

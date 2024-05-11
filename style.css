@@ -10,10 +10,10 @@ body {
   height: 100%;
 }
 
-/* main {
-  height: 100%;
-  width: 100%;
-} */
+main {
+  /* height: 100%;
+  width: 100%; */
+}
 
 nav {
   background-color: transparent;
@@ -402,6 +402,15 @@ header {
   width: 100%;
   /* object-fit: cover; */
   object-position: center;
+}
+#page4 .cursor {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 25px;
+  height: 25px;
+  border-radius: 100%;
+  background-color: rgb(255, 29, 29);
 }
 
 /* Footer style */

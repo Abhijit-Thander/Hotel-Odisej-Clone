@@ -151,9 +151,49 @@ function page4Anim() {
   });
 }
 
+function page5textAnimation() {
+  let Allh1 = document.querySelectorAll("#page5 .header .h-top h1");
+  Allh1.forEach(function (elem) {
+    let clutter = "";
+    let H1text = elem.textContent;
+    let splitedText = H1text.split("");
+    splitedText.forEach(function (e) {
+      clutter += `<span>${e}</span>`;
+    });
+    elem.innerHTML = clutter;
+  });
+
+  gsap.to("#page5 .header .h-top h1 span", {
+    color: "#E3E3C4",
+    stagger: 0.1,
+    scrollTrigger: {
+      trigger: "#page5 h1",
+      scroller: "main",
+      // markers: true,
+      start: "top 80%",
+      end: "top 20%",
+      scrub: 2,
+    },
+  });
+
+  gsap.from("#page5 .hotels .hotel-list", {
+    opacity: 0,
+    stagger: 0.2,
+    scrollTrigger: {
+      trigger: "#page5 .box",
+      scroller: "main",
+      markers: true,
+      start: "top 80%",
+      end: "top 20%",
+      scrub: 3,
+    },
+  });
+}
+
 locomotiveScroll();
 pageAnimation();
 textAnimation();
 Page2TextAnimation();
 page2ImgAnimation();
 page4Anim();
+page5textAnimation();

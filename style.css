@@ -15,6 +15,7 @@ main {
   width: 100%; */
   background-color: #f7f7ee;
   /* padding-bottom: 1px; */
+  /* overflow-x: hidden; */
 }
 
 nav {
@@ -574,9 +575,7 @@ header {
   height: 100%;
   display: flex;
   justify-content: space-between;
-  padding: 6vw 0;
-  /* border: 1px solid black; */
-  /* background-color: yellow; */
+  padding: 2vw 0;
 }
 #page10 .content .inner-content {
   width: 100%;
@@ -590,7 +589,7 @@ header {
 #page10 .content .left {
   width: 40%;
   height: 100%;
-  /* background-color: yellow; */
+
   cursor: pointer;
   border-radius: 28px;
   overflow: hidden;
@@ -607,9 +606,6 @@ header {
 #page10 .content .right {
   width: 50%;
   height: 100%;
-  /* background-color: rgb(135, 248, 125); */
-  /* text-align: center; */
-  /* display: flex; */
   align-items: center;
   justify-content: center;
   flex-direction: column;
@@ -645,6 +641,58 @@ header {
   font-family: DM sans;
   /* margin-bottom: 2vw; */
   color: #434b34;
+}
+/* Page 11 style */
+#page11 {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+}
+#page11 .content {
+  height: 100%;
+  width: 100%;
+}
+#page11 .content img {
+  height: 100%;
+  width: 100%;
+}
+#page11 .nature-btm {
+  position: absolute;
+  bottom: 10%;
+  height: 28vh;
+  width: 100%;
+  padding: 0 4.5vw;
+}
+#page11 .nature-btm .nature {
+  height: 100%;
+  width: 100%;
+  padding: 0 6vw;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #5b6748;
+  border-radius: 22px;
+}
+#page11 .nature-btm .nature h1 {
+  color: #e2e2c3;
+  font-family: PP woodland;
+  font-size: 4vw;
+  font-weight: 500;
+}
+#page11 .nature-btm .nature h3 {
+  color: #f7f7ee;
+  font-family: DM sans;
+  font-size: 2vw;
+  font-weight: 400;
+  display: flex;
+  align-items: center;
+  gap: 1vw;
+  cursor: pointer;
+}
+#page11 .nature-btm .nature h3 img {
+  background-color: white;
+  border-radius: 16px;
+  padding: 2px 14px;
 }
 
 /* Footer style */

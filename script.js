@@ -89,8 +89,8 @@ function textAnimation() {
       trigger: "#page1 h1",
       scroller: "main",
       // markers: true,
-      start: "top 60%",
-      end: "top -10%",
+      start: "top 80%",
+      end: "top 10%",
       scrub: 2,
     },
   });

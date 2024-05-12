@@ -261,7 +261,7 @@ function page11Animation() {
     scrollTrigger: {
       trigger: "#page11 .nature-btm ",
       scroller: "main",
-      markers: true,
+      // markers: true,
       start: "top 90%",
       end: "top 50%",
       scrub: 3,

@@ -341,21 +341,45 @@
 
   /* Footer style */
   footer {
-    height: 60vh;
-    width: 100%;
-    background-color: #03364f;
-    color: #e3e3c4;
-    overflow-y: hidden;
-    /* position: relative; */
-    /* border-top: 5px solid black; */
+    height: 30vh;
+
+    padding: 4vw 0;
   }
 
-  footer .f-bg-svg {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
+  footer .f-top {
+    padding: 0 6vw;
+  }
+  footer .f-top .f-top-about {
     height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .f-top .f-top-about .about {
+    align-items: start;
+    gap: 2.5vw;
+  }
+  .f-top .f-top-about .about h4 {
+    font-size: 3vw;
+    opacity: 0.8;
+  }
+  .f-top .f-top-about .about:nth-child(1) {
     display: none;
+  }
+
+  footer .f-btm h2 {
+    font-family: "Briem Hand", cursive;
+    font-size: 5vw;
+    letter-spacing: 0.6vw;
+  }
+
+  @keyframes anime {
+    0% {
+      scale: 1;
+    }
+    50% {
+      scale: 1.4;
+    }
   }
 }

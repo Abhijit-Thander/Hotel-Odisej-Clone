@@ -262,9 +262,9 @@ function page11Animation() {
       trigger: "#page11 .nature-btm ",
       scroller: "main",
       // markers: true,
-      start: "top 90%",
-      end: "top 50%",
-      scrub: 3,
+      start: "top 100%",
+      end: "top 60%",
+      scrub: 2,
     },
   });
 }

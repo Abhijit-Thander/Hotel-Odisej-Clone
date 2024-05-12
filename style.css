@@ -701,8 +701,6 @@ footer {
   color: #e3e3c4;
   position: relative;
   padding: 6vw 0;
-  /* z-index: 100; */
-  /* border-top: 5px solid black; */
 }
 
 footer .f-bg-svg {
@@ -710,7 +708,8 @@ footer .f-bg-svg {
   top: 0;
   left: 0;
   width: 100%;
-  height: 100%;
+  height: 95%;
+  /* display: none; */
 }
 
 footer .f-bg-svg img {
@@ -730,16 +729,13 @@ footer .f-top {
 }
 footer .f-top .f-top-about {
   height: 100%;
-
   width: 100%;
-
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
 .f-top .f-top-about .about {
   width: 30%;
-
   height: 100%;
   display: flex;
   align-items: center;
@@ -769,7 +765,7 @@ footer .f-btm {
   justify-content: center;
   width: 100%;
   height: 30%;
-  background-color: rgba(223, 235, 47, 0.148);
+  border-top: 1px solid #d7dabd24;
 }
 
 footer .f-btm h2 {

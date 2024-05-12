@@ -133,7 +133,7 @@ header {
   text-align: center;
   color: #434b34;
   font-weight: 500;
-  font-family: PP Woodland;
+  font-family: PP woodland, "Briem Hand", cursive;
 }
 
 /* Page 2 style */
@@ -158,7 +158,7 @@ header {
   line-height: 4.8vw;
   text-align: center;
   font-weight: 500;
-  font-family: PP Woodland;
+  font-family: PP woodland, "Briem Hand", cursive;
 }
 
 #page2-content .img-content {
@@ -174,8 +174,7 @@ header {
 #page2-content .img-content .left {
   width: 43%;
   height: 100%;
-  /* background-color: #65714f; */
-  /* position: relative; */
+
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -344,7 +343,7 @@ header {
 }
 
 .rooms .left .room-dtl h3 {
-  font-family: PP Woodland;
+  font-family: PP woodland, "Briem Hand", cursive;
   font-size: 2.5vw;
   font-weight: 500;
   padding-bottom: 1.2vw;
@@ -428,7 +427,7 @@ header {
   line-height: 5.2vw;
   text-align: center;
   font-weight: 500;
-  font-family: PP Woodland;
+  font-family: PP woodland, "Briem Hand", cursive;
   color: #043f5d;
 }
 #page5 .header .h-top {
@@ -479,8 +478,8 @@ header {
   font-size: 2.5vw;
   line-height: 2vw;
   font-weight: 500;
-  font-family: PP Woodland;
-  margin: 2.5vw 0 1.5vw 0;
+  font-family: PP woodland, "Briem Hand", cursive;
+  margin: 3.5vw 0 2.5vw 0;
 }
 .hotels .hotel-list p {
   color: #c6d0cd;
@@ -519,7 +518,7 @@ header {
 }
 #page6 h1 {
   text-align: center;
-  font-family: PP woodland;
+  font-family: PP woodland, "Briem Hand", cursive;
   font-size: 4.5vw;
   font-weight: 500;
   line-height: 4.8vw;
@@ -557,7 +556,7 @@ header {
 }
 #page10 .header h1 {
   font-size: 5vw;
-  font-family: PP woodland;
+  font-family: PP woodland, "Briem Hand", cursive;
   letter-spacing: 0.5px;
   color: #444c35;
   font-weight: 500;
@@ -613,7 +612,7 @@ header {
 #page10 .content .right h3 {
   font-size: 3vw;
   font-weight: 500;
-  font-family: PP woodland;
+  font-family: PP woodland, "Briem Hand", cursive;
   margin-bottom: 2vw;
   color: #434b34;
 }
@@ -674,7 +673,7 @@ header {
 }
 #page11 .nature-btm .nature h1 {
   color: #e2e2c3;
-  font-family: PP woodland;
+  font-family: PP woodland, "Briem Hand", cursive;
   font-size: 4vw;
   font-weight: 500;
 }

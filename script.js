@@ -43,7 +43,7 @@ function pageAnimation() {
 
   tl.from("header .img-box", {
     height: 300,
-    width: 600,
+    width: "40vw",
     duration: 2,
     ease: "power2.inOut",
   });
@@ -170,8 +170,8 @@ function page5textAnimation() {
       trigger: "#page5 h1",
       scroller: "main",
       // markers: true,
-      start: "top 80%",
-      end: "top 20%",
+      start: "top 90%",
+      end: "top 70%",
       scrub: 2,
     },
   });
@@ -184,19 +184,19 @@ function page5textAnimation() {
       scroller: "main",
       // markers: true,
       start: "top 80%",
-      end: "top 20%",
+      end: "top 50%",
       scrub: 3,
     },
   });
-  gsap.from("#page5 .header .h-btm ", {
+  gsap.from("#page5 .header .h-btm h6", {
     opacity: 0,
     stagger: 0.1,
     scrollTrigger: {
       trigger: "#page5 .header .h-btm ",
       scroller: "main",
       // markers: true,
-      start: "top 80%",
-      end: "top 50%",
+      start: "top 90%",
+      end: "top 80%",
       scrub: 1,
     },
   });

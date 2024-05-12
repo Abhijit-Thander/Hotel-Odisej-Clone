@@ -14,7 +14,7 @@ main {
   /* height: 100%;
   width: 100%; */
   background-color: #f7f7ee;
-  padding-bottom: 1px;
+  /* padding-bottom: 1px; */
 }
 
 nav {
@@ -213,6 +213,7 @@ header {
   width: 100%;
   border-radius: 30px;
   overflow: hidden;
+  cursor: pointer;
 }
 
 .img-content .left .room-img-left img {
@@ -220,12 +221,13 @@ header {
   width: 100%;
   object-fit: cover;
   object-position: center;
+  /* transition: all ease-in-out 1s; */
 }
 
 #page2 .img-content .right {
   height: 100%;
   width: 55%;
-  /* background-color: rgb(66, 81, 245); */
+  cursor: pointer;
 }
 
 .img-content .right .room-right-img {
@@ -249,6 +251,7 @@ header {
   width: 100%;
   object-fit: cover;
   object-position: center;
+  /* transition: all ease-in-out 1s; */
 }
 
 /* Page 3 */
@@ -365,7 +368,7 @@ header {
   text-align: left;
 }
 
-#room-types .rooms .right h6 {
+#room-types .rooms .right h5 {
   font-family: Dm sans;
   font-size: 1.1vw;
   font-weight: 400;
@@ -375,7 +378,7 @@ header {
   background-color: #5b6647;
 }
 
-#room-types .rooms:hover h6 {
+#room-types .rooms:hover h5 {
   color: #5b6647;
   background-color: #e3e3c4;
 }
@@ -405,6 +408,7 @@ header {
   /* object-fit: cover; */
   object-position: center;
 }
+
 /* Page 5 style */
 
 #page5 {
@@ -452,7 +456,6 @@ header {
 .hotels .hotel-list .box {
   height: 50%;
   width: 95%;
-
   border-radius: 28px;
   overflow: hidden;
   cursor: pointer;

@@ -254,6 +254,20 @@ function page10Animation() {
     },
   });
 }
+function page11Animation() {
+  gsap.from("#page11 .nature-btm   ", {
+    opacity: 0,
+    stagger: 1,
+    scrollTrigger: {
+      trigger: "#page11 .nature-btm ",
+      scroller: "main",
+      markers: true,
+      start: "top 90%",
+      end: "top 50%",
+      scrub: 3,
+    },
+  });
+}
 
 locomotiveScroll();
 pageAnimation();
@@ -264,3 +278,4 @@ page4Anim();
 page5textAnimation();
 page6textAnimation();
 page10Animation();
+page11Animation();
